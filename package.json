@@ -1,0 +1,14 @@
+{
+  "name": "metz-transport",
+  "private": true,
+  "description": "Carte interactive du réseau de transport de Metz (LE MET') : lignes, arrêts, horaires, temps réel, itinéraires et vélos.",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
