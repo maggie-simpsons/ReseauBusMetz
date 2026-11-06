@@ -4,6 +4,7 @@ Carte interactive du réseau de transport en commun de Metz (**LE MET'**) : lign
 
 - **Frontend** : React + Vite + Leaflet (`client/`)
 - **Backend** : Node.js + Express (`server/`)
+- **Mobile** : React Native + Expo (`mobile/`), même backend — voir [mobile/README.md](mobile/README.md)
 
 ## Fonctionnalités
 

@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Metz Transport",
+    "slug": "metz-transport",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "fr.metztransport.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "fr.metztransport.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Metz Transport utilise votre position pour trouver les arrêts proches et calculer vos itinéraires."
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "scheme": "metztransport"
+  }
+}
